@@ -28,7 +28,6 @@ int calcular_idade() {
     scanf("%d", &an);
     idade = aa - an;
     return idade;
-    
 }
 
 // --- Função para Calcular a Média de 4 Notas ---
@@ -49,49 +48,29 @@ float media_notas() {
 }
 
 // --- Função para Encontrar o Maior Número entre 3 ---
-int maior_numero() {
-    int n1, n2, n3, maior;
+int multi_2_numeros() {
+    int n1, n2, n3, multi;
     system("cls");
-    printf("<< 3 - Maior Numero >>\n\n");
+    printf("<< 3 - Multiplicação de 2 Número >>\n\n");
     printf("Informe o primeiro numero: ");
     scanf("%d", &n1);
     printf("Informe o segundo numero: ");
     scanf("%d", &n2);
-    printf("Informe o terceiro numero: ");
-    scanf("%d", &n3);
-
-    maior = n1;
-    if (n2 > maior) {
-        maior = n2;
-    }
-    if (n3 > maior) {
-        maior = n3;
-    }
-
-    return maior;
+	multi = n1 * n2;
+    return multi;
 }
 
 // --- Função para Encontrar o Menor Número entre 3 ---
-int menor_numero() {
-    int n1, n2, n3, menor;
+int div_2_numeros() {
+    int n1, n2, n3, div;
     system("cls");
-    printf("<< 4 - Menor Numero >>\n\n");
+    printf("<< 4 - Divisão de 2 Número >>\n\n");
     printf("Informe o primeiro numero: ");
     scanf("%d", &n1);
     printf("Informe o segundo numero: ");
     scanf("%d", &n2);
-    printf("Informe o terceiro numero: ");
-    scanf("%d", &n3);
-
-    menor = n1;
-    if (n2 < menor) {
-        menor = n2;
-    }
-    if (n3 < menor) {
-        menor = n3;
-    }
-
-    return menor;
+	div = n1 / n2;
+    return div;
 }
 
 void main(){
@@ -103,9 +82,9 @@ void main(){
         printf("  << Menu de Opcoes >>  \n");
         printf("========================\n");
         printf("1 - Calcular Idade\n");
-        printf("2 - Media de 3 Notas\n");
-        printf("3 - Maior Numero\n");
-        printf("4 - Menor Numero\n");
+        printf("2 - Media de 4 Notas\n");
+        printf("3 - Multiplicacao de 2 Numero\n");
+        printf("4 - Divisao de 2 Numero\n");
         printf("5 - Sair\n");
         printf("------------------------\n");
 
@@ -122,11 +101,11 @@ void main(){
                 printf("\nA media das notas e: %.2f\n", ret_f);
                 break;
             case 3:
-                ret = maior_numero();
+                ret = multi_2_numeros();
                 printf("\nO maior numero informado e: %d\n", ret);
                 break;
             case 4:
-               	ret = menor_numero();
+               	ret = div_2_numeros();
                	printf("\nO menor numero informado e: %d\n", ret);
                 break;
             case 5:
