@@ -12,9 +12,9 @@ int idade(int aa, int an){
 void main(){
 	int aa, an, ret;
 	printf("Informe o ano atual: ");
-	scanf("d%", &aa);
+	scanf("%d", &aa);
 	printf("Informe o ano de nascimento: ");
-	scanf("d%", &an);
+	scanf("%d", &an);
 	ret = idade(aa, an);
-	printf("\nSoma: %d", ret); 
+	printf("\nIdade: %d", ret); 
 }

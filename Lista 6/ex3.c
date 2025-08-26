@@ -12,9 +12,9 @@ int media(float n1, float n2){
 void main(){
 	float n1, n2, ret;
 	printf("Informe a nota 1: ");
-	scanf("f%", &n1);
+	scanf("%f", &n1);
 	printf("Informe a noat 2: ");
-	scanf("f%", &n2);
+	scanf("%f", &n2);
 	ret = media(n1, n2);
-	printf("\n\nMedia: %.2f", ret); 
+	printf("\nMedia: %.2f", ret); 
 }

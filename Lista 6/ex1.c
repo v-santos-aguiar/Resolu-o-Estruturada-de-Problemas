@@ -15,7 +15,7 @@ void main(){
 	printf("Informe o valor de A: ");
 	scanf("%d", &a);
 	printf("Informe o valor de B: ");
-	scanf("d%", &b);
+	scanf("%d", &b);
 	ret = somar_numeros(a, b);
 	printf("\nSoma: %d", ret);
 }
