@@ -3,7 +3,6 @@
 
 #define TF 10
 
-
 /*1.	Fazer um programa em "C" que lê 10 valores e imprime o maior e o menor valor lido.*/
 
 void carregar_vetor(int vet[TF]){
