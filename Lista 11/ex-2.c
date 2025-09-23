@@ -32,14 +32,14 @@ char *ret_categoria(int idade){
 void main(){
 	int idade;
 		
-	printf("=========================\n");
-    printf("<< Categoria Nadadores >>\n");
-    printf("=========================\n");
+	printf("============================\n");
+    printf("<<<  Categoria Nadadores >>>\n");
+    printf("============================\n");
     printf("5 a 7 anos      = Infantil A\n");
     printf("8 a 10 anos     = Infantil B\n");
-    printf("11-13 anos      = Juvenil C\n");
-    printf("14-17 anos      = Juvenil D\n");
-    printf("18 anos ou mais = Adulto E\n");
+    printf("11-13 anos      = Juvenil  C\n");
+    printf("14-17 anos      = Juvenil  D\n");
+    printf("18 anos ou mais = Adulto   E\n");
     printf("------------------------\n\n");
 	    
 	printf("Informe a idade do nadador: ");
