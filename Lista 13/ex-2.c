@@ -17,23 +17,27 @@ void carregar_matriz(int mat[TL][TC]){
 }
 
 
-void ler_numero(int mat[TL][TC]){
-    int l, c, num = 0;
-
-    printf("Informe um numero para procurar na matriz: ");
+void procurar_numero(int mat[TL][TC]){
+    int l, c, num = 0, cont = 0;
+	printf("Informe um numero para procurar na matriz: ");
     scanf("%d", &num);
-
     for(l = 0; l < TL; l++){
         for(c = 0; c < TC; c++){
             if(mat[l][c] == num){
                 printf("\nNumero %d encontrado na posicao Matriz[%d][%d]", num, l, c);
+				cont++;
             }
         }
     }
+	
+	if(cont == 0){
+		printf("\nO numero %d nao foi encontrado na matriz.", num);
+	}
+	
 }
 
 void main(){
 	int mat[TL][TC];
 	carregar_matriz(mat);
-	ler_numero(mat);
+	procurar_numero(mat);
 }
