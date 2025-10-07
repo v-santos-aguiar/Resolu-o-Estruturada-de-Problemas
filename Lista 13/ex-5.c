@@ -15,7 +15,6 @@ void carregar_matriz(int mat_a[TL][TC]){
 			mat_a[l][c] = cont++;
 		}
 	}
-	
 }
 
 void exibir_matriz(int mat_a[TL][TC]){
