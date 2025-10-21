@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
 
-/*#include <stdio.h>
-#include <conio.h>
-
 /*2.	Considerando o exercício anterior, criar uma variável que é um vetor da estrutura DadosAluno. O programa deve obter a média e a idade de 10 alunos. 
 Depois, estes dados devem ser exibidos.*/
 
