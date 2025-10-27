@@ -64,7 +64,6 @@ void calcular_media(struct pesquisa reg_pesquisa[TF]){
 	printf("\n\nMedia de Salarios: %0.2f", media);
 }
 
-
 void main(){
 	struct pesquisa reg_pesquisa[TF];
 	carregar_registro(reg_pesquisa);
