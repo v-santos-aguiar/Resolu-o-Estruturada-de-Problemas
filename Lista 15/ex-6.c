@@ -6,7 +6,7 @@
 struct ficha {
 	char nome[50];
 	float salario;
-	char cpf[11];
+	char cpf[14];
 	int idade;
 	char sexo[10];
 };

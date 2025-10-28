@@ -1,16 +1,31 @@
 #include <stdio.h>
 #include <conio.h>
 
-/*6.	Desenvolva um programa que leia e exiba um registro conforme o modelo abaixo.*/
+/*1.	Desenvolva um programa que leia e exiba um vetor registro conforme o modelo abaixo:
 
-#define TF 5
+- nome
+- salário
+- cpf
+- idade
+- sexo (1-Masculino; 2-Feminino)
+
+Com base no modelo acima crie um programa que contenha um vetor de registros com 5 posições e faça:
+
+a.	Criar um procedimento que leia os registros. 
+b.	Criar um procedimento que exiba todos os registros. 
+c.	Criar uma função que calcule a média salarial.
+d.	Criar uma função que retorne o maior salário.
+e.	Criar uma função que retorne à quantidade de pessoas do sexo feminino
+*/
+
+#define TF 1
 
 struct ficha {
 	char nome[50];
 	float salario;
 	char cpf[14];
 	int idade;
-	char sexo[10];
+	int sexo;
 };
 
 void carregar_reg(struct ficha reg_ficha[TF]){
@@ -33,9 +48,10 @@ void carregar_reg(struct ficha reg_ficha[TF]){
 		printf("Informe a Idade: ");
 		scanf("%d", &reg_ficha[i].idade);
 
-		printf("Informe o sexo: ");
-		fflush(stdin);
-		gets(reg_ficha[i].sexo);
+		do{
+			printf("Informe a qualificacao: (1-Feminino 2-Masculino) ");
+			scanf("%d", &reg_ficha[i].sexo);
+		}while(reg_ficha[i].sexo!=1 && reg_ficha[i].sexo!=2);
 	}
 }
 
@@ -48,7 +64,7 @@ void exibir_reg(struct ficha reg_ficha[TF]){
 		printf("Salario: %.2f\n", reg_ficha[i].salario);
 		printf("CPF: %s\n", reg_ficha[i].cpf);
 		printf("Idade: %d\n", reg_ficha[i].idade);
-		printf("Sexo: %s", reg_ficha[i].sexo);
+		printf("Sexo: %d", reg_ficha[i].sexo);
 	}
 }
 
