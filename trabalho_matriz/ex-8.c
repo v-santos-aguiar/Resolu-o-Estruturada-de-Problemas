@@ -69,7 +69,7 @@ void exibir_matriz(int mat[TL][TC]){
 	
 	for(l = 0; l < TL; l++){
 		for(c = 0; c < TC; c++){
-			printf("%3d |", mat[l][c]);
+			printf("%2d |", mat[l][c]);
 		}
 		printf("\n"); 
 	}
